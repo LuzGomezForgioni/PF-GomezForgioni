@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAV */
+.navbar{
+    background-color: navy;
+    padding: 15px;
+}
+
+nav ul li{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px 0 10px 20px !important;
+}
+
+.navbar-nav{
+    gap: 10px;
+    text-align: right;
+}
+
+.navbar-collapse{
+    justify-content: center;
+}
+
+.navbar-toggler{
+    background-color: cornflowerblue;
+    opacity: 0.8;
+    padding: 3px 5px;
+}
+
+.navbar .container-fluid{
+    justify-content: right;
+}
+
+.nav-link:hover{
+    color: cornflowerblue;
+}
+
+.navbar-nav .nav-link.active{
+    color: cornflowerblue;
+}
+
+header h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* MAIN */
+.mainIndex h3, .mainServicios h3, .mainTurnos h3, .mainNos h3, .mainProduc h3{
+    padding: 25px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    font-weight: bold;
+}
+
+footer h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer p{
+    padding: 15px 0;
+    margin: 0;
+    background-color: firebrick;
+    font-weight: 600;
+}
+
+footer img{
+    width: 30px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.container__footer{
+    padding: 15px;
+}
+
+/* SERVICIOS */
+.mainServicios{
+    text-align: center;
+}
+
+.mainServicios img{
+    width: 500px;
+}
+
+/* TURNOS */
+
+
+/* SOBRE NOSOTROS */
+.mainNos div{
+    text-align: center;
+}
+
+.mainNos img{
+    width: 450px;
+}
+
+.div__pNos{
+    align-self: center;
+    line-height: 35px;
+}
+
+/* PRODUCTOS */
+.mainProduc{
+    text-align: center;
+}
+
+.mainProduc img{
+    width: 150px;
+}
