@@ -106,9 +106,6 @@ footer a{
     width: 500px;
 }
 
-/* TURNOS */
-
-
 /* SOBRE NOSOTROS */
 .mainNos div{
     text-align: center;
@@ -130,4 +127,39 @@ footer a{
 
 .mainProduc img{
     width: 150px;
+}
+
+/* Media Queris */
+@media only screen and (min-width: 481px) and (max-width:764px){
+    header h1{
+        font-size: 28px;
+    }
+
+    .mainIndex .row, .mainServicios .row{
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .mainIndex img, .mainServicios img, .mainNos img{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    header h1{
+        font-size: 24px;
+    }
+
+    .mainIndex .row, .mainServicios .row{
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .mainIndex img, .mainServicios img, .mainNos img{
+        width: 75%;
+    }
+
+    .container__footer .row{
+        gap: 30px;
+    }
 }
