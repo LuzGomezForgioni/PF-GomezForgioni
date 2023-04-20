@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"  content="PELUQUERIA, CORTE, TINTURA, TINTE, DECOLORACION, NUTRICION, TIJERAS, CABELLO, BARBA, HOMBRE">
+    <meta name="description" content="En la peluquería de Gastón queremos que te sientas cómodo y es por eso que ofrecemos aperitivos o bebida de preferencia para que tu momento sea único">
+    <!--Fav Icon-->
+    <link rel="shortcut icon" href="../img/icono.ico">
     <!-- Link Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Peluquería</title>
 </head>
 
@@ -50,11 +56,16 @@
         <h3>SOBRE NOSOTROS</h3>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 div__pNos">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod explicabo provident, placeat minus beatae nisi natus exercitationem facere doloremque quaerat esse iste nobis praesentium totam reprehenderit recusandae possimus quam, quia suscipit, laudantium dolore! Sed ut sapiente distinctio. Inventore, ea sunt? Ea accusantium laborum modi inventore iure sed in, eligendi nihil consectetur deserunt sit itaque blanditiis enim perferendis dolor eos iste expedita voluptas, eius ad.</p>
+                <div class="col-12 col-md-6 div__pNos" data-aos="fade-right" data-aos-duration="2000">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quod explicabo provident, placeat
+                        minus beatae nisi natus exercitationem facere doloremque quaerat esse iste nobis praesentium
+                        totam reprehenderit recusandae possimus quam, quia suscipit, laudantium dolore! Sed ut sapiente
+                        distinctio. Inventore, ea sunt? Ea accusantium laborum modi inventore iure sed in, eligendi
+                        nihil consectetur deserunt sit itaque blanditiis enim perferendis dolor eos iste expedita
+                        voluptas, eius ad.</p>
                 </div>
-                <div class="col-12 col-md-6">
-                    <img src="../img/peluNos.jpg" alt="">
+                <div class="col-12 col-md-6" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="../img/peluNos.jpg" alt="imagen nosotros">
                 </div>
             </div>
         </div>
@@ -69,7 +80,7 @@
                     <a href="https://instagram.com" target="_blank"><img src="../img/ig.png" alt="Instagram" /></a>
                     <a href="https://twitter.com" target="_blank"><img src="../img/twitter.png" alt="Twitter" /></a>
                 </div>
-        
+
                 <div class="col-12 col-sm-6">
                     <h4>Contacto</h4>
                     <a href="https://whatsapp.com" target="_blank"><img src="../img/wsp.png" alt="Whatsapp" /></a>
@@ -80,6 +91,12 @@
 
         <p>2023 -Todos los derechos reservados</p>
     </footer>
+
+    <!-- Libreria AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Framework Bootstarp -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
