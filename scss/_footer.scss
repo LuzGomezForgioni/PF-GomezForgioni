@@ -1,0 +1,23 @@
+footer{
+    text-align: center;
+    font-weight: bold;
+    .container__footer{
+        padding: 15px;
+        h4{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        a{
+            text-decoration: none;
+            img{
+                width: 30px;
+            }
+        }
+    }
+    p{
+        padding: 15px 0;
+        margin: 0;
+        background-color: firebrick;
+        font-weight: 600;
+    }
+}

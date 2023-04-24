@@ -1,0 +1,42 @@
+.navbar{
+    background-color: navy;
+    padding: 15px;
+    .container-fluid{
+        justify-content: right;
+        .navbar-toggler{
+            background-color: cornflowerblue;
+            opacity: 0.8;
+            padding: 3px 5px;
+        }
+        .navbar-collapse{
+            justify-content: center;
+            .navbar-nav{
+                gap: 10px;
+                text-align: right;
+                li{
+                    display: inline-block;
+                    font-weight: bold;
+                    .nav-link{
+                        color: white;
+                        letter-spacing: 1px;
+                        padding: 10px 0 10px 20px !important;
+                        &:hover{
+                            color: cornflowerblue;
+                        }
+                    }
+                    .active{
+                        color: cornflowerblue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+header h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}

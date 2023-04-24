@@ -1,0 +1,11 @@
+@mixin titulosMain{
+    padding: 25px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.mainIndex h3, .mainServicios h3, .mainTurnos h3, .mainNos h3, .mainProduc h3{
+    @include titulosMain;
+}

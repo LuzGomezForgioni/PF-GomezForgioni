@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-/* NAV */
 .navbar {
   background-color: navy;
   padding: 15px;
@@ -49,7 +42,6 @@ header h1 {
   margin: 0;
 }
 
-/* MAIN */
 .mainIndex h3, .mainServicios h3, .mainTurnos h3, .mainNos h3, .mainProduc h3 {
   padding: 25px;
   text-align: center;
@@ -58,7 +50,6 @@ header h1 {
   font-weight: 600;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   font-weight: bold;
@@ -81,6 +72,12 @@ footer p {
   margin: 0;
   background-color: firebrick;
   font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 /* SERVICIOS */
@@ -121,11 +118,14 @@ footer p {
   header h1 {
     font-size: 28px;
   }
-  .mainIndex .row, .mainServicios .row {
+  .mainIndex .row,
+  .mainServicios .row {
     justify-content: center;
     gap: 40px;
   }
-  .mainIndex img, .mainServicios img, .mainNos img {
+  .mainIndex img,
+  .mainServicios img,
+  .mainNos img {
     width: 500px;
   }
   .row--gap {
@@ -136,11 +136,14 @@ footer p {
   header h1 {
     font-size: 24px;
   }
-  .mainIndex .row, .mainServicios .row {
+  .mainIndex .row,
+  .mainServicios .row {
     justify-content: center;
     gap: 30px;
   }
-  .mainIndex img, .mainServicios img, .mainNos img {
+  .mainIndex img,
+  .mainServicios img,
+  .mainNos img {
     width: 75%;
   }
   .container__footer .row {
