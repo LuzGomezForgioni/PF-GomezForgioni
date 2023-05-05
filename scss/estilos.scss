@@ -16,6 +16,12 @@
 
     img {
         width: 500px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    p{
+        margin-top: 10px;
     }
 }
 
@@ -36,6 +42,8 @@
 
     img {
         width: 450px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .sectionNos {
@@ -47,14 +55,21 @@
 .mainProduc {
     text-align: center;
 
-    img {
-        width: 150px;
-    }
-}
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
 
-@mixin sizes($justifyContent, $gap) {
-    justify-content: $justifyContent;
-    gap: $gap;
+        .card {
+            width: 250px;
+
+            img {
+                width: 150px;
+                align-self: center;
+            }
+        }
+    }
 }
 
 /* Media Queris */
@@ -63,12 +78,11 @@
         font-size: 28px;
     }
 
-    .mainIndex .row,
     .mainServicios .row {
-        @include sizes(center, 40px);
+        justify-content: center;
+        gap: 40px;
     }
 
-    .mainIndex img,
     .mainServicios img,
     .mainNos img {
         width: 500px;
@@ -77,6 +91,11 @@
     .row--gap {
         gap: 20px;
     }
+
+    .mainNos iframe {
+        width: 500px;
+        height: 400px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -84,22 +103,22 @@
         font-size: 24px;
     }
 
-    .mainIndex .row,
     .mainServicios .row {
-        @include sizes(center, 30px);
+        justify-content: center;
+        gap: 40px;
     }
 
-    .mainIndex img,
     .mainServicios img,
     .mainNos img {
         width: 75%;
     }
 
-    .container__footer .row {
-        gap: 30px;
-    }
-
     .row--gap {
         gap: 20px;
+    }
+
+    .mainNos iframe {
+        width: 350px;
+        height: 350px;
     }
 }

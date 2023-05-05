@@ -2,15 +2,18 @@
 .navbarIndex {
     background-color: navy;
     padding: 25px;
+
     ul {
         list-style: none;
         display: flex;
         justify-content: center;
         gap: 30px;
+
         li {
             .active {
                 color: cornflowerblue;
             }
+
             a {
                 text-decoration: none;
                 color: white;
@@ -21,33 +24,112 @@
     }
 }
 
-.mainIndex {
-    display: grid;
-    grid-template-areas: "titulo titulo" "img1 img2";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(2, auto);
-
-    .titulo {
-        grid-area: titulo;
-    }
-
-    .img1 {
-        grid-area: img1;
-    }
-
-    .img2 {
-        grid-area: img2;
-    }
-}
-
-.img1,
-.img2 {
-    width: 600px;
-    justify-self: center;
-}
-
 .container__footerIndex {
     @extend .container__footer;
     display: flex;
     justify-content: space-evenly;
+}
+
+@mixin sizes($width, $justify-self, $border-radius, $box-shadow) {
+    width: $width;
+    justify-self: $justify-self;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+@media only screen and (min-width: 1200px) {
+    .mainIndex {
+        display: grid;
+        grid-template-areas: "titulo titulo" "img1 img2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(2, auto);
+
+        .titulo {
+            grid-area: titulo;
+        }
+
+        .img1 {
+            grid-area: img1;
+        }
+
+        .img2 {
+            grid-area: img2;
+        }
+    }
+
+    .img1,
+    .img2 {
+        @include sizes(600px, center, 10px, rgba(0, 0, 0, 0.35) 0px 5px 15px);
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+    .mainIndex {
+        display: grid;
+        grid-template-areas: "titulo titulo" "img1 img2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(2, auto);
+
+        .titulo {
+            grid-area: titulo;
+        }
+
+        .img1 {
+            grid-area: img1;
+        }
+
+        .img2 {
+            grid-area: img2;
+        }
+    }
+
+    .img1,
+    .img2 {
+        @include sizes(450px, center, 10px, rgba(0, 0, 0, 0.35) 0px 5px 15px);
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .mainIndex {
+        display: grid;
+        grid-template-areas: "titulo titulo" "img1 img2";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(2, auto);
+
+        .titulo {
+            grid-area: titulo;
+        }
+
+        .img1 {
+            grid-area: img1;
+        }
+
+        .img2 {
+            grid-area: img2;
+        }
+    }
+
+    .img1,
+    .img2 {
+        @include sizes(300px, center, 10px, rgba(0, 0, 0, 0.35) 0px 5px 15px);
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 599px) {
+    .navbarIndex {
+        ul {
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .mainIndex {
+        text-align: center;
+
+        .img1,
+        .img2 {
+            @include sizes(350px, center, 10px, rgba(0, 0, 0, 0.35) 0px 5px 15px);
+        }
+    }
 }
