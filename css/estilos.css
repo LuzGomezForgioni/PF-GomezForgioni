@@ -1,4 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+.navbarIndex {
+  background-color: navy;
+  padding: 25px;
+}
+.navbarIndex ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.navbarIndex ul li .active {
+  color: cornflowerblue;
+}
+.navbarIndex ul li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.mainIndex {
+  display: grid;
+  grid-template-areas: "titulo titulo" "img1 img2";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2, auto);
+}
+.mainIndex .titulo {
+  grid-area: titulo;
+}
+.mainIndex .img1 {
+  grid-area: img1;
+}
+.mainIndex .img2 {
+  grid-area: img2;
+}
+
+.img1,
+.img2 {
+  width: 600px;
+  justify-self: center;
+}
+
+.container__footerIndex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .navbar {
   background-color: navy;
   padding: 15px;
@@ -52,19 +99,19 @@ header h1 {
 
 footer {
   text-align: center;
-  font-weight: bold;
 }
-footer .container__footer {
+footer .container__footer, footer .container__footerIndex {
   padding: 15px;
 }
-footer .container__footer h4 {
+footer .container__footer h4, footer .container__footerIndex h4 {
   font-size: 18px;
   font-weight: 600;
+  color: black;
 }
-footer .container__footer a {
+footer .container__footer a, footer .container__footerIndex a {
   text-decoration: none;
 }
-footer .container__footer a img {
+footer .container__footer a img, footer .container__footerIndex a img {
   width: 30px;
 }
 footer p {
@@ -72,6 +119,7 @@ footer p {
   margin: 0;
   background-color: firebrick;
   font-weight: 600;
+  color: black;
 }
 
 * {
@@ -96,6 +144,7 @@ footer p {
 /* SOBRE NOSOTROS */
 .mainNos {
   text-align: center;
+  overflow-x: hidden;
 }
 .mainNos .div__pNos {
   align-self: center;
@@ -103,6 +152,9 @@ footer p {
 }
 .mainNos img {
   width: 450px;
+}
+.mainNos .sectionNos {
+  margin: 25px 0 15px;
 }
 
 /* PRODUCTOS */
@@ -146,7 +198,7 @@ footer p {
   .mainNos img {
     width: 75%;
   }
-  .container__footer .row {
+  .container__footer .row, .container__footerIndex .row {
     gap: 30px;
   }
   .row--gap {

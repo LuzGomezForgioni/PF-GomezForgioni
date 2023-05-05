@@ -1,0 +1,53 @@
+// INDEX SIN BOOTSTRAP
+.navbarIndex {
+    background-color: navy;
+    padding: 25px;
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        li {
+            .active {
+                color: cornflowerblue;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                letter-spacing: 1px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.mainIndex {
+    display: grid;
+    grid-template-areas: "titulo titulo" "img1 img2";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+
+    .titulo {
+        grid-area: titulo;
+    }
+
+    .img1 {
+        grid-area: img1;
+    }
+
+    .img2 {
+        grid-area: img2;
+    }
+}
+
+.img1,
+.img2 {
+    width: 600px;
+    justify-self: center;
+}
+
+.container__footerIndex {
+    @extend .container__footer;
+    display: flex;
+    justify-content: space-evenly;
+}

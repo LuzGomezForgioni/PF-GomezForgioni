@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import "indexSinBS";
 @import "header";
 @import "main";
 @import "footer";
@@ -26,6 +27,7 @@
 /* SOBRE NOSOTROS */
 .mainNos {
     text-align: center;
+    overflow-x: hidden;
 
     .div__pNos {
         align-self: center;
@@ -34,6 +36,10 @@
 
     img {
         width: 450px;
+    }
+
+    .sectionNos {
+        margin: 25px 0 15px;
     }
 }
 
